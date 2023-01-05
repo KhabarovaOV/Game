@@ -34,7 +34,7 @@ public class Game {
         for (int i = 0; i < map.map.length; i++) {
             for (int j = 0; j < map.map[i].length; j++) {
                 map.map[i][j] = (char) (Math.random() * 100);
-                if (map.map[i][j] >= 80) {
+                if (map.map[i][j] >= 80 & map.map[i][j]!=map.map[9][9] & map.map[i][j]!=map.map[8][9]& map.map[i][j]!=map.map[9][8]) {
                     map.map[i][j] = 'S';
                 } else {
                     map.map[i][j] = '_';

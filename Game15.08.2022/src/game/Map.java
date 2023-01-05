@@ -27,7 +27,7 @@ public class Map {
         if (x - 1 < 0 || map[x - 1][y] == 'S') {
             System.out.println("Сюда ходить нельзя");
         } else {
-            map[x - 1][y] = 'P';
+            map[x - 1][y] = '\u2764';
             map[x][y] = '.';
             x--;
         }
@@ -38,7 +38,7 @@ public class Map {
         if (x + 1 > 9 || map[x + 1][y] == 'S') {
             System.out.println("Сюда ходить нельзя");
         } else {
-            map[x + 1][y] = 'P';
+            map[x + 1][y] = '\u2764';
             map[x][y] = '.';
             x++;
         }
@@ -49,7 +49,7 @@ public class Map {
         if (y + 1 > 9 || map[x][y + 1] == 'S') {
             System.out.println("Сюда ходить нельзя");
         } else {
-            map[x][y + 1] = 'P';
+            map[x][y + 1] = '\u2764';
             map[x][y] = '.';
             y++;
         }
@@ -60,7 +60,7 @@ public class Map {
         if (y - 1 < 0 || map[x][y - 1] == 'S') {
             System.out.println("Сюда ходить нельзя");
         } else {
-            map[x][y - 1] = 'P';
+            map[x][y - 1] = '\u2764';
             map[x][y] = '.';
             y--;
         }
